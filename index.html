@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="styles/sweetalert2.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/Top.svg" alt="">
+    </header>
+    <main>
+        <section class="inicial">
+
+            <div class="pantalla1">
+                <button id="btnIniciar" class="btn_iniciar">Iniciar Juego</button>
+                <button id="btnNuevaPalabra" class="btn_nueva_palabra">Agregar nueva palabra</button>
+            </div>
+            <div class="pantalla2">
+                <input type="text" id="txtAgregarPalabra" class="txt_nueva_palabra" placeholder="Nueva palabra">
+                <label class="lbl_informacion"><span>!</span>Max. 8 letras, sin caracteres epeciales</label>
+                <button id="btnGuardar" class="btn_guardar">Guardar</button>
+                <button id="btnCancelar" class="btn_cancelar">Cancelar</button>
+            </div>
+            <div class="pantalla3">
+        
+                <div class="container_ahorcado">
+                    <img id="mono_ahorcado" alt="Ahorcado">
+            
+                </div>
+                <div class="letra_valida">
+                    <!-- <span class="letra correcta">A</span>
+                    <span class="letra correcta">L</span>
+                    <span class="letra correcta"></span>
+                    <span class="letra correcta"></span>
+                    <span class="letra correcta">A</span> -->
+                </div>
+                <div class="letra_invalida">
+                    <!-- <span class="letra incorrecta">B</span>
+                    <span class="letra incorrecta">J</span>
+                    <span class="letra incorrecta">K</span>
+                    <span class="letra incorrecta">C</span>
+                    <span class="letra incorrecta">A</span> -->
+                </div>
+                <form class="botones" action="javascript:void(0)">
+                    <input type="button" class="btn-azul" value="Nuevo Juego" onclick="jugarOtro()"/>
+                    <input id="btnDesistir" type="button" value="Desistir">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/ahorcado.js"></script>
+</body>
+</html>

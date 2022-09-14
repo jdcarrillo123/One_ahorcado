@@ -1,0 +1,230 @@
+body{
+    background-color: #f3f5fc;
+    margin: 0px;
+}
+html{
+    font-size: 16px;
+}
+
+.inicial button{
+    transition: 0.5s;
+}
+.inicial button:hover{
+    transform: scale(1.02);
+    border-radius: 20px;
+}
+.inicial button:active{
+    transform: translateY(20px);
+}
+.pantalla2{
+    display: none;
+}
+.pantalla3{
+    display: none;
+}
+.txt_nueva_palabra{
+    border-style: none;
+    outline: none;
+}
+.container_ahorcado{
+    width: 100vw;
+    text-align: center; 
+    margin-top:4rem ;
+    margin-bottom: 2rem;
+}
+#mono_ahorcado{
+   max-width: 100%;
+   min-height: 100%;
+   width: 25rem;
+   height:30rem;
+   display: inline-block;
+}
+#mono_ahorcado::after{
+    content: "Hombre ahorcado";
+}
+.letra_valida{
+    text-align: center;
+    color: #052051;
+    font-size: 1.8rem;
+}
+.letra{
+   display: inline-block; 
+   vertical-align: middle;
+   text-align: center;
+  
+}
+.correcta{
+    width: 4rem;
+    height: 4rem;
+    border-bottom:solid 1px #052051 ;
+    margin-left: .4rem;
+    line-height: 4.5rem;
+}
+.letra_invalida{
+    text-align: center;
+    margin-top: 1rem;
+    color: #495057;
+    
+}
+.incorrecta{
+    margin-left: 1rem;
+}
+[type="button"]{
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #0A3871;
+    color: #0A3871;
+    cursor:pointer;
+    background: inherit;
+}
+.botones{
+    margin-top: 3rem;
+    text-align: center;
+
+}
+.btn-azul{
+    background-color: #0A3871;
+    color: white;
+}
+
+
+
+@media all and (min-width:100px){
+    header{
+        margin: 3%;
+    }
+    [type="button"]{
+        margin:5px;
+    }
+    #mono_ahorcado{
+        max-width:90%;
+    }
+    .btn_iniciar {
+        display: block;
+        width: 85%;
+        height: 80px;
+        margin: 170px auto 20px auto;
+        border-radius: 24px;
+        background-color: #0A3871;
+        color: white;
+        cursor:pointer;
+    }
+    .btn_nueva_palabra{
+        display: block;
+        width: 85%;
+        height: 67px;
+        margin: 0px auto 0px auto;
+        border-radius: 24px;
+        background-color: #F3F5FC;
+        border-color: #0A3871;
+        color: #0A3871;
+        cursor:pointer;
+    }
+    .txt_nueva_palabra{
+        display: block;
+        width: 84%;
+        height: 48px;
+        margin: 110px 6% 210px 6%;
+        font-size: 2rem;
+        color: #0A3871;
+        background-color: #F3F5FC;
+    }
+    .lbl_informacion{
+        margin-left:6%;
+        color: #495057;
+    }
+    .btn_guardar{
+        display: block;
+        width: 90%;
+        height: 67px;
+        margin: 16px 5% 24px 5%;
+        border-radius: 24px;
+        background-color: #0A3871;
+        color: white;
+        border-color: #0A3871;
+        cursor:pointer;
+    }
+    .btn_cancelar{
+        display: block;
+        width: 90%;
+        height: 67px;
+        margin: 0 5% 24px 5%;
+        border-radius: 24px;
+        background-color: #F3F5FC;
+        border-color: #0A3871;
+        color: #0A3871;
+        cursor:pointer;
+    }
+}
+
+@media all and (min-width: 640px){
+    .btn_iniciar {
+        width: 50%;
+        margin: 170px auto 20px auto;
+        cursor:pointer;
+    }
+    .btn_nueva_palabra{
+        width: 48%;
+        margin: 0px auto 0px auto;
+        cursor:pointer;
+    }
+    .txt_nueva_palabra{
+        display: block;
+        width: 60%;
+        margin: 150px 0 600px 6%;
+    }
+    .lbl_informacion{
+        display: block;
+        margin: 0 40% 0 6%;
+        color: #495057;
+    }
+    .btn_guardar{
+        display:inline-block;
+        width: 41.7%;
+        margin: 16px 2% 0px 6%;
+    }
+    .btn_cancelar{
+        display:inline-block;
+        width: 41.7%;
+        margin: 16px 6% 0px 2%;
+    }
+}
+
+@media all and (min-width:992px){
+    header{
+        margin: 3% 6%;
+    }
+    .btn_iniciar{
+        width: 20%;
+        margin: 10% auto 38px auto;
+        cursor:pointer;
+    }
+    .btn_nueva_palabra{
+        width: 20%;
+        margin: 0px auto 0px auto;
+        cursor:pointer;
+    }
+    .txt_nueva_palabra{
+        display: block;
+        width: 23.7%;
+        margin: 120px 0 150px 24%;
+    }
+    .lbl_informacion{
+        display: block;
+        margin: 0 0 0 24%;
+        color: #495057;
+    }
+    .btn_guardar{
+        display:inline-block;
+        width: 23.7%;
+        margin: 16px 2% auto 24%;
+        cursor:pointer;
+    }
+    .btn_cancelar{
+        display:inline-block;
+        width: 23.7%;
+        margin: 16px 24% auto 2%;
+        cursor:pointer;
+    }
+}
